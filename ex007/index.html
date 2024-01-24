@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte e Pré-formatado</h2>
+    <p>O comando <code>documento.getElementyBytId('teste')</code> é escrito em linguagem Java Script. <!--A <code></code> cria uma fonte mono espaçada, muito utilizada para a leitura de códigod-->
+    <pre><code>
+    num = int(input('Digite um número'))
+    if num % 2 == o:
+        print (f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é IMPAR')
+    print('Fim do programa')
+    </code></pre> <!--<ore></pre> vai imprimir a formatação da maneira que vc colocar no dochtml. É importante, inserir a <pre> antes da <code> escrever o texto e fechar a </code> e depois a </pre>. Mas no formatação de envelopamento, ele já faz isso sozinho.-->
+<h2>Citações</h2>
+<p>COmo diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p> <!--A <q> é a forma semântica de gerar citações, simples, sem quebras.-->
+<p>Segundo Jeff Noble, no seu libro HTML para leigos: </p>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=0">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de textos.
+    </blockquote> <!--Essa tag vai gerar um recuo para direita no texto que for colocado entre elas, gerando uma citação em bloco, ou que necessite de quebra de linhas. É importante lembrar que essa é uma forma semântica, portanto, o navegador, o google, irá considerar todas as informações existentes nessas tags, facilitando os sistemas de buscas. E para ficar melhor, se inserir o parâmetro cite="" e inserir o link da referência, o sistema de busca, vai ficar mais fácil para entender do que se trata e de onde vem aquela citação. Isso garante os direitos de quem produziu aquele conteúdo.-->       
+    </p>
+<h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Linguage">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando.</p>
+<h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p><!-- a <bdo></bdo> Inverte o texto, mas é preciso colocar o parâmetro dir="" e informar a direção que você quer que ele apareça escrito.-->
+
+</body>
+</html>
